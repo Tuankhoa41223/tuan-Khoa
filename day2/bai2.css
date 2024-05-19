@@ -25,9 +25,15 @@ li{
 }
 .nox{
     padding: 10px 9px;
+    position: relative;
 }
 input{
     border-radius: 5px; 
+}
+i{
+    position: absolute;
+    right: 16px;
+    top: 14px;
 }
 main{
     margin: 0 auto;
