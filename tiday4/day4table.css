@@ -1,0 +1,69 @@
+:root {
+   --header : linear-gradient(to right,aqua, blue);
+}
+
+
+table {
+    border-spacing: 0;
+}
+th,td {
+    padding: 8px;
+    text-align: center;
+}
+thead {
+    background-color: brown;
+    color: white;
+}
+tfoot {
+    background-color: brown;
+    color: white;
+}
+tbody tr:hover {
+    background-color: gray;
+}
+
+.plane {
+    width: 80%;
+    animation: khoa 1s infinite alternate;
+}
+
+/* @keyframes  khoa {
+    from {
+        margin: 0;
+    }
+    to {
+        margin-top: 100px;
+    }
+} */
+header {
+    height: 50px;
+    background-image: var(--header);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    height: 500px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
