@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2023/12/20/07/04/clouds-8459053_640.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+form{
+    height: 55%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    
+    text-align: center;
+    .form-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        height: 100%;
+
+        .form-img{
+            background-image: url(https://cdn.pixabay.com/photo/2024/02/21/14/14/mountains-8587802_640.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .form-text{
+            h2{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .form-input{
+                position: relative;
+                
+                input{
+                    width: 90%;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    
+                }
+                i{
+                    position: absolute;
+                    right: 46px;
+                    top: 12px
+                }
+
+            }
+            .dangnhap{
+               width: 90%;
+               border-radius: 20px;
+               height: 40px;
+               background-color: rgb(84, 84, 202); 
+               color: #fff;
+               
+            }
+            .button-fa{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                
+                
+                
+                .blue{
+                    background-color: rgb(121, 121, 242);
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                 
+                }
+                .red{
+                    background-color: rgb(237, 48, 48);
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px;
+                    text-decoration: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+                .aqua{
+                    background-color: rgb(71, 214, 205);
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            a{
+               margin-top: 10px;
+                .qmk{
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+}

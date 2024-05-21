@@ -27,14 +27,14 @@ tbody tr:hover {
     animation: khoa 1s infinite alternate;
 }
 
-/* @keyframes  khoa {
+@keyframes khoa {
     from {
         margin: 0;
     }
     to {
         margin-top: 100px;
     }
-} */
+}
 header {
     height: 50px;
     background-image: var(--header);

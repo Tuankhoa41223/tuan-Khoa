@@ -20,6 +20,9 @@ header{
         li{
             margin-left: 40px;
             color: #fff;
+            height: 100%;
+            display: flex;
+            align-items: center;
             
         }
         li:nth-child(2){
