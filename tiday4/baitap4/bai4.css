@@ -32,8 +32,9 @@ form{
         .form-img{
             background-image: url(https://cdn.pixabay.com/photo/2024/02/21/14/14/mountains-8587802_640.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
-            border-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            
         }
         .form-text{
             h2{
