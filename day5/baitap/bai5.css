@@ -10,6 +10,9 @@ img{
     height: 100%;
 }
 
+.list-table:hover ul {
+    display: block !important;
+}
 @media only screen and (max-width: 768px){
     header{
         background-image: url(https://cdn.pixabay.com/photo/2024/04/08/19/54/coffee-8684315_640.jpg);
@@ -24,13 +27,11 @@ img{
             .list-table{
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 i{
-                    margin-left: 230px;
-                   position: relative;
-                   &:hover ul{
-                    display: block;
-                   }
-                   ul{
+                    margin-left: 230px;                        
+                }
+                ul{
                     position: absolute;
                    background-color: rgb(19, 145, 229);
                    top: 20px;
@@ -41,16 +42,16 @@ img{
                    list-style: none;
                    z-index: 1;
                    li {
-                    text-align: center;
+                    text-align: end;
                     margin-right: 20px;
                     font-size: 13px;
                     margin: 0;
                     &:hover{
                         color: #fff;
                     } 
-                }
-                } 
-            }
+                 }
+                   } 
+               
         }
         img{
             
@@ -303,17 +304,31 @@ img{
             display: flex;
             align-items: center;
             justify-content: center;
+            img{
+                width: 20%;
+                height: 90px;
+                margin-right: 100px;
+            }
+            .list-table{
+            
+                    ul{
+                        display: flex;
+                        li{
+                            list-style: none;
+                            margin-left: 50px;
+                            color: #fff;
+                        }
+                    }
+                i{
+                    display: none;
+                }
+    
+            }
+
+            
         }
-        img{
-            width: 20%;
-            height: 90px;
-            margin-right: 100px;
-        }
-        li{
-            list-style: none;
-            margin-left: 50px;
-            color: #fff;
-        }
+        
+        
         h1{
             color: #fff;
             text-align: center;
@@ -570,11 +585,24 @@ img{
                 /* padding: 5px; */
                 margin-right: 500px;
             }
-            li{
-                list-style: none;
-                color: #fff;
-                margin-left: 50px;
+            .list-table{
+                i{
+                    display: none;
+
+                }
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        color: #fff;
+                        margin-left: 60px;
+                    }
+                }
+
             }
+           
         }
         h1{
             text-align: center;
@@ -782,7 +810,7 @@ img{
         }
     }
     footer{
-        height: 490px;
+        height: 450px;
         background-color: rgb(3, 3, 78);
         img{
             width: 250px;
@@ -812,15 +840,20 @@ img{
         .freebie{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 600px;
+            gap: 10px;
             p{
                 color: #fff;
-                padding: 40px;
+                padding: 10px;
+
+                /* padding: 40px; */
             }
             .fa{
                i{
                 width: 10px;
-                padding: 40px;
+                /* padding: 40px; */
+               margin-left: 10px;
+                padding: 10px;
+                
                 
                }
             }
